@@ -1,0 +1,24 @@
+# Virtual environment
+ai_env/
+venv/
+.venv/
+
+# Secrets and local data
+.env
+maps.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE / tooling
+.claude/
+.idea/
+.vscode/
+*.swp
+
+# Streamlit secrets (for cloud deploy)
+.streamlit/secrets.toml
