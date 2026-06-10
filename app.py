@@ -494,7 +494,7 @@ with st.sidebar:
     st.subheader("🕘 History")
 
     search = st.text_input("🔍 Search history", placeholder="Filter by topic or name…", key="hist_search")
-    profile = st.session_state["profile"]
+    profile_key(st.session_state.get("profile_name", ""))
     page    = st.session_state.get("hist_page", 0)
     total   = count_history(profile, search)
     history = load_history(profile, search, page)
